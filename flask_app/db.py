@@ -5,7 +5,7 @@ import psycopg2
 
 try:
     conn = psycopg2.connect(host='localhost', dbname='past_weather',user='postgres',
-                        password='jiyoung1203', port='5433')
+                        password='', port='5433')
 except:
     print("NOT CONNECTED!")
     
