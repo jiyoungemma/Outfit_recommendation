@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <title>outfit recommendation</title>
+    </head>
+<body>
+    <div class="navbar navbar-light bg-light text-center">
+        <div class="container">
+        
+        <a href="#" class="navbar-brand">
+        <strong>Outfit Recommendation </strong>
+        </a>
+    </div>
+    </div>
+    <section class="py-5 text-center container">
+    <div>
+        <h1 class="fw-bolder">
+            <strong>Today's outfit recommendation is... </strong>
+        </h1>
+        <img src="https://www.chatelaine.com/wp-content/uploads/2019/01/closet-organization-illustration.jpg" width="500" height="500">
+    </div>
+    <article>   
+    <!--오늘 outfit -->
+        <p>
+            {% if outfit == 8 %}
+            <h3>
+                <span class="outfit">
+                오늘은 <strong>너무 더운 날!</strong></span>
+            </h3>
+            <h4>
+                이런 옷들을 추천해요! 
+            </h4>
+            <h4>
+                <p>
+                <a href="https://search.shopping.naver.com/search/all?query=%EB%AF%BC%EC%86%8C%EB%A7%A4&cat_id=&frm=NVSHATC" 
+                target="_blank">민소매</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%EC%88%8F%ED%8C%AC%EC%B8%A0&cat_id=&frm=NVSHATC" 
+                target="_blank">숏팬츠</a>
+                </p>
+            </h4>
+            {% elif outfit == 7 %}
+            <h3>
+                <span class="outfit">오늘은 <strong>조금 더운 날!</strong></span>
+            </h3>
+            <h4>    
+                이런 옷들을 추천해요! 
+            {% elif outfit == 6 %}
+            </h4>
+            <h4>
+                <p>
+                <a href="https://search.shopping.naver.com/search/all?query=%ED%8B%B0%EC%85%94%EC%B8%A0&cat_id=&frm=NVSHATC" 
+                target="_blank"></a>티셔츠
+                <a href="https://search.shopping.naver.com/search/all?query=%EB%B0%98%EB%B0%94%EC%A7%80&cat_id=&frm=NVSHATC" 
+                target="_blank"></a>반바지
+                </p>
+            </h4>
+            <h3>
+                <span class="outfit">오늘은 <strong>따뜻한 날!</strong></span>
+            </h3>
+            <h4>
+                이런 옷들을 추천해요! 
+            </h4>
+            <h4>
+                <p>
+                <a href="https://search.shopping.naver.com/search/all?query=%EC%85%94%EC%B8%A0&cat_id=&frm=NVSHATC" 
+                target="_blank">셔츠</a>
+                <a href="https://search.shopping.naver.com/search/all?query=7%EB%B6%80%EB%B0%94%EC%A7%80&cat_id=&frm=NVSHATC" 
+                target="_blank">7부바지</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%EB%A9%B4%EB%B0%94%EC%A7%80&cat_id=&frm=NVSHATC" 
+                target="_blank">면바지</a>
+                </p>
+            </h4>
+            {% elif outfit == 5 %}
+            <h3>
+                <span class="outfit">오늘은 <strong>조금 따뜻한 날!</strong></span>
+            </h3>
+            <h4>
+                이런 옷들을 추천해요! 
+            </h4>
+            <h4>
+                <p>
+                <a href="https://search.shopping.naver.com/search/all?query=%ED%9B%84%EB%93%9C%ED%8B%B0&frm=NVSHATC&prevQuery=%EB%A7%A8%ED%88%AC%EB%A7%A8" 
+                target="_blank">후드티</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%EB%B0%94%EB%9E%8C%EB%A7%89%EC%9D%B4&frm=NVSHATC&prevQuery=%ED%9B%84%EB%93%9C%ED%8B%B0" 
+                target="_blank">바람막이</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%EC%8A%AC%EB%9E%99%EC%8A%A4&frm=NVSHATC&prevQuery=%EB%B0%94%EB%9E%8C%EB%A7%89%EC%9D%B4" 
+                target="_blank">슬랙스</a>
+                </p>
+            </h4>
+            {% elif outfit == 4 %}
+            <h3>
+                <span class="outfit">오늘은 <strong>조금 쌀쌀한 날!</strong></span>
+            </h3>
+            <h4>
+                이런 옷들을 추천해요! 
+            </h4>
+            <h4>
+                <p>
+                    <a href="https://search.shopping.naver.com/search/all?query=%EA%B8%B0%EB%AA%A8%20%ED%9B%84%EB%93%9C%ED%8B%B0&frm=NVSHATC&prevQuery=%EC%9E%90%EC%BC%93" 
+                    target="_blank">기모 후드티</a>
+                    <a href="https://search.shopping.naver.com/search/all?query=%EA%B0%80%EB%94%94%EA%B1%B4&frm=NVSHATC&prevQuery=%EA%B8%B0%EB%AA%A8%20%ED%9B%84%EB%93%9C%ED%8B%B0" 
+                    target="_blank">가디건</a> 
+                    <a href="https://search.shopping.naver.com/search/all?query=%EB%8B%88%ED%8A%B8&frm=NVSHATC&prevQuery=%EA%B0%80%EB%94%94%EA%B1%B4" 
+                    target="_blank">니트</a> 
+                    <a href="https://search.shopping.naver.com/search/all?query=%EB%A7%A8%ED%88%AC%EB%A7%A8&frm=NVSHATC&prevQuery=%EB%8B%88%ED%8A%B8" 
+                    target="_blank">맨투맨</a> 
+                </p>
+            </h4>
+            {% elif outfit == 3 %}
+            <h3>
+                <span class="outfit">오늘은 <strong>꽤 쌀쌀해요!</strong></span>
+            </h3>
+            <h4>
+                이런 옷들을 추천해요! 
+            </h4>
+            <h4>
+                <p>
+                <a href="https://search.shopping.naver.com/search/all?query=%ED%8A%B8%EB%A0%8C%EC%B9%98%EC%BD%94%ED%8A%B8&frm=NVSHATC&prevQuery=%ED%94%8C%EB%A6%AC%EC%8A%A4" 
+                target="_blank">트렌치코트</a> 
+                <a href="https://search.shopping.naver.com/search/all?query=%EC%95%BC%EC%83%81&frm=NVSHATC&prevQuery=%ED%8A%B8%EB%A0%8C%EC%B9%98%EC%BD%94%ED%8A%B8" 
+                target="_blank">야상</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%EC%9E%90%EC%BC%93&frm=NVSHATC&prevQuery=%EC%95%BC%EC%83%81" 
+                target="_blank">자켓</a>
+                </p>
+            </h4>
+            {% elif outfit == 2 %}
+            <h3>
+                <span class="outfit">오늘은 <strong>조금 추운 날!</strong></span>
+            </h3>
+            <h4>
+                이런 옷들을 추천해요! 
+            </h4>
+            <h4>
+                <p>
+                <a href="https://search.shopping.naver.com/search/all?query=%EC%BD%94%ED%8A%B8&frm=NVSHATC&prevQuery=%EC%9E%A5%EA%B0%91" 
+                target="_blank">코트</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%EA%B0%80%EC%A3%BD%EC%9E%90%EC%BC%93&frm=NVSHATC&prevQuery=%EC%BD%94%ED%8A%B8" 
+                target="_blank">가죽자켓</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%EB%8B%88%ED%8A%B8&frm=NVSHATC&prevQuery=%EA%B0%80%EC%A3%BD%EC%9E%90%EC%BC%93" 
+                target="_blank">니트</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%ED%94%8C%EB%A6%AC%EC%8A%A4&frm=NVSHATC&prevQuery=%EB%8B%88%ED%8A%B8" 
+                target="_blank">플리스</a>
+                </p>
+            </h4>
+            {% else %}
+            <h3>
+                <span class="outfit">오늘은 <strong>굉장히 추운 날!</strong></span>
+            </h3>
+            <h4>
+                이런 옷들을 추천해요! 
+            </h4>
+            <h4>
+                <p>
+                <a href="https://search.shopping.naver.com/search/all?query=%ED%8C%A8%EB%94%A9&cat_id=&frm=NVSHATC"
+                target="_blank">패딩</a> 
+                <a href="https://search.shopping.naver.com/search/all?query=%EB%91%90%EA%BA%BC%EC%9A%B4%20%EC%BD%94%ED%8A%B8&frm=NVSHATC&prevQuery=%EB%91%90"
+                target="_blank">두꺼운 코트</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%ED%9E%88%ED%8A%B8%ED%85%8D&frm=NVSHATC&prevQuery=%EB%91%90%EA%BA%BC%EC%9A%B4%20%EC%BD%94%ED%8A%B8"
+                target="_blank">히트텍</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%EB%AA%A9%EB%8F%84%EB%A6%AC&frm=NVSHATC&prevQuery=%ED%9E%88%ED%8A%B8%ED%85%8D" 
+                target="_blank">목도리</a>
+                <a href="https://search.shopping.naver.com/search/all?query=%EC%9E%A5%EA%B0%91&frm=NVSHATC&prevQuery=%EB%AA%A9%EB%8F%84%EB%A6%AC"
+                target="_blank">장갑</a>
+                </p>
+            </h4>
+            {% endif %}    
+        </p>
+    </article>
+    </section>
+</body>
+</html>
